@@ -16,7 +16,7 @@ A collection of scripts to automate installing packages from winget
  PowerShell -Command "Set-ExecutionPolicy RemoteSigned -scope Process; [Net.ServicePointManager]::SecurityProtocol = 'Tls12'; iwr -useb https://raw.githubusercontent.com/gerardog/gsudo/master/installgsudo.ps1 | iex"
  ```
  - Portable:
-  1. Download gsudo.portable.zip from the [latest release][gsudo]
+  1. Download `gsudo.portable.zip` from the [latest release][gsudo]
   2. Extract the folder corresponding to your processor architecture (x64, x86, or arm64) from the zip file to a suitable directory on your computer.
   3. Optionally, add that directory to your system's `PATH` environment variable if it's not already accessible.
 
