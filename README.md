@@ -8,27 +8,14 @@ A collection of scripts to automate installing packages from winget
 ## Instructions
 1. Before using the scripts in this repo, you must first install gsudo. You can do so via the following methods.
 
- - winget:
- ```sh
- winget install gerardog.gsudo -e -i
- ```
-
- - scoop:
- ```sh
- scoop install gsudo
- ```
-
- - chocolaty:
- ```sh
- choco install gsudo
- ```
-
+ - Using Scoop: `scoop install gsudo`
+ - Using WinGet: `winget install gerardog.gsudo -e -i`
+ - Using Chocolatey: `choco install gsudo`
  - Powershell:
  ```powershell
  PowerShell -Command "Set-ExecutionPolicy RemoteSigned -scope Process; [Net.ServicePointManager]::SecurityProtocol = 'Tls12'; iwr -useb https://raw.githubusercontent.com/gerardog/gsudo/master/installgsudo.ps1 | iex"
  ```
-
- - portable:
+ - Portable:
   1. Download gsudo.portable.zip from the [latest release][gsudo]
   2. Extract the folder corresponding to your processor architecture (x64, x86, or arm64) from the zip file to a suitable directory on your computer.
   3. Optionally, add that directory to your system's `PATH` environment variable if it's not already accessible.
